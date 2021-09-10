@@ -56,3 +56,8 @@ resource "aws_lightsail_static_ip_attachment" "attach_ip" {
   static_ip_name = aws_lightsail_static_ip.skypc_ip.id
   instance_name  = aws_lightsail_instance.web_skypc.id
 }
+
+
+output "ip" {
+  value = "${aws_lightsail_static_ip.skypc_ip.ip_address}"
+}
