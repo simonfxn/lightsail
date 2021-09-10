@@ -1,3 +1,3 @@
 output "ip" {
-  value = "${aws_lightsail_static_ip.static_ip.ip_address}"
+  value = "${aws_lightsail_static_ip.skypc_ip.ip_address}"
 }
